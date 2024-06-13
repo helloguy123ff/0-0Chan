@@ -1,35 +1,65 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0-0Chan</title>
-    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="keywords" content="imageboard" />
+<meta name="description" content="0-0chan é um simples image board baseado em foruns japoneses." />
+<meta name="robots" content="noarchive" />
+<title>0-0chan</title><link rel="stylesheet" type="text/css" href="style.css" />
+<style type="text/css">
+.danbo-slot {
+ width:728px;
+ height:90px;
+ margin:10px auto;
+ overflow:hidden
+}
+@media only screen and (max-width:480px) {
+ .danbo-slot {
+  width:300px;
+  height:250px
+ }
+}
+</style>
+<script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+var tid = /(^|\.)4channel.org$/.test(location.host) ? 'UA-166538-5' : 'UA-166538-1';
+ga('create', tid, {'sampleRate': 1});
+ga('set', 'anonymizeIp', true);
+ga('send','pageview')</script>
 </head>
 <body>
-    <h1>Bem-vindo ao 0-0Chan</h1>
-    <ul>
-        <!-- Links para as categorias -->
-        <li><a href="topic.html?category=politica">Categoria: Política</a></li>
-        <li><a href="topic.html?category=tecnologia">Categoria: Tecnologia</a></li>
-        <li><a href="topic.html?category=entretenimento">Categoria: Entretenimento</a></li>
-        <!-- Adicione mais categorias conforme necessário -->
-    </ul>
-
-    <script>
-        // Configuração do Firebase
-        var firebaseConfig = {
-            apiKey: "SUA_API_KEY",
-            authDomain: "SEU_DOMÍNIO.firebaseapp.com",
-            databaseURL: "https://SEU_DOMÍNIO.firebaseio.com",
-            projectId: "SEU_PROJETO",
-            storageBucket: "SEU_BUCKET.appspot.com",
-            messagingSenderId: "SEU_SENDER_ID",
-            appId: "SEU_APP_ID"
-        };
-        // Inicialização do Firebase
-        firebase.initializeApp(firebaseConfig);
-    </script>
-</body>
-</html>
+<div id="doc">
+<div id="hd">
+<div id="logo-fp">
+<a href="//www.0-0chan.org/" title="Home"><img alt="0-0chan" src="caramba-removebg-preview.png" width="300" height="120"></a>
+</div>
+</div>
+<div id="bd">
+<div class="box-outer" id="announce">
+<div class="box-inner">
+<div class="boxbar">
+<h2>What is 4chan?</h2>
+<a data-cmd="x-wot" href="#" class="closebutton"></a>
+</div>
+<div class="boxcontent">
+<div id="wot-cnt"></div> </div>
+</div>
+</div>
+<div id="danbo-s-t" class="danbo-slot"></div>
+<script>
+    <div class="box-outer top-box" id="boards">
+<div class="box-inner">
+<div class="boxbar">
+<h2>Boards</h2>
+<div id="filter-btn" data-cmd="filter">filter ▼</div>
+</div>
+<div class="boxcontent">
+<div class="column">
+<h3 style="text-decoration: underline; display: inline;">Japanese Culture</h3>
+<ul>
+<li><a href="" class="boardlink">Anime</a></li>
+<li><a href="" class="boardlink">MANGAS</a></li>
+<li><a href="" class="boardlink"></a></li>
+<li><a href="" class="boardlink"></a></li>
+<li><a href="" class="boardlink"></a></li>
