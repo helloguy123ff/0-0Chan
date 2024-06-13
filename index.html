@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0-0Chan</title>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+</head>
+<body>
+    <h1>Bem-vindo ao 0-0Chan</h1>
+    <ul>
+        <!-- Links para as categorias -->
+        <li><a href="topic.html?category=politica">Categoria: Política</a></li>
+        <li><a href="topic.html?category=tecnologia">Categoria: Tecnologia</a></li>
+        <li><a href="topic.html?category=entretenimento">Categoria: Entretenimento</a></li>
+        <!-- Adicione mais categorias conforme necessário -->
+    </ul>
+
+    <script>
+        // Configuração do Firebase
+        var firebaseConfig = {
+            apiKey: "SUA_API_KEY",
+            authDomain: "SEU_DOMÍNIO.firebaseapp.com",
+            databaseURL: "https://SEU_DOMÍNIO.firebaseio.com",
+            projectId: "SEU_PROJETO",
+            storageBucket: "SEU_BUCKET.appspot.com",
+            messagingSenderId: "SEU_SENDER_ID",
+            appId: "SEU_APP_ID"
+        };
+        // Inicialização do Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+</html>
